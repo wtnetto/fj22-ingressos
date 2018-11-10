@@ -5,7 +5,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.time.Duration;
 
 /**
@@ -71,7 +70,8 @@ public class Filme {
     }
     
     public BigDecimal getPreco(){
-    	return preco.setScale(2, RoundingMode.HALF_UP);
+    	//return preco.setScale(2, RoundingMode.HALF_UP);
+    	return preco;
     }
     
     public void setPreco(BigDecimal preco){

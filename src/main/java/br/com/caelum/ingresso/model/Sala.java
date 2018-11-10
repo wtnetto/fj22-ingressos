@@ -5,7 +5,6 @@ import org.hibernate.validator.constraints.NotBlank;
 import javax.persistence.*;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -82,7 +81,8 @@ public class Sala {
     }
     
     public BigDecimal getPreco(){
-    	return preco.setScale(2, RoundingMode.HALF_UP);
+    	//return preco.setScale(2, RoundingMode.HALF_UP);
+    	return preco;
     }
     
     public void setPreco(BigDecimal preco){

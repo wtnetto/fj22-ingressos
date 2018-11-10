@@ -39,11 +39,6 @@ public class SalaController {
     @Autowired
     private SessaoDao sessaoDao;
     
-    	
-    	
-   
-    
-    
 
     @PostMapping("/admin/sala")
     @Transactional
