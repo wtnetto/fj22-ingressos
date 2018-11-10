@@ -7,7 +7,6 @@ import br.com.caelum.ingresso.model.descontos.Desconto;
 
 public class Ingresso {
 	
-	private Sessao sessao;
 	private BigDecimal preco;
 	
 	/**
@@ -17,7 +16,6 @@ public class Ingresso {
 	public Ingresso(){}
 	
 	public Ingresso (Sessao sessao, Desconto tipoDeDesconto){
-		this.sessao = sessao;
 		this.preco = tipoDeDesconto.aplicarDescontosSobre(sessao.getPreco());
 	}
 	
