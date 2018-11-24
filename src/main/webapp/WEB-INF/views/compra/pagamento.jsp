@@ -59,6 +59,11 @@
                     <label for="cpf">CPF:</label>
                     <input id="cpf" type="text" name="cpf" class="form-control">
                 </div>
+                
+                <div class="col-md-6">
+                    <label for="vencimento">Vencimento:</label>
+                    <input id="vencimento" type="text" name="vencimento" class="form-control">
+                </div>
             </div>
 
 
